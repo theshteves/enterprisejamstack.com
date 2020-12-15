@@ -9,9 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-3xl text-pink-500" css={{backgroundColor: 'teal'}}>
-        Welcome to Your App
-      </h1>
+      <h1 className="text-3xl text-pink-500">🥞</h1>
     </div>
   )
 }
