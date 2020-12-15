@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Host: undefined
-Sitemap: undefined/sitemap.xml
+Host: https://jamstackwithjason.com
+Sitemap: https://jamstackwithjason.com/sitemap.xml
