@@ -1,6 +1,6 @@
 {
-  "title": "Fast, efficient, easy to work on websites built on the JAMStack",
-  "titleTemplate": "%s | JAMStack with Jason",
+  "title": "Fast, efficient, easy to work on websites built on the Jamstack",
+  "titleTemplate": "%s | Jamstack with Jason",
   "description": "This is my Next.js TypeScript Tailwind Site",
   "favicon": "/favicon.ico",
   "additionalMetaTags": [
