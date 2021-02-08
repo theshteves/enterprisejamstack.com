@@ -6,7 +6,7 @@ const SubscribeForm = () => {
       <h3 className="lg:text-5xl text-4xl font-bold text-center pb-2">
         Get Really Good at Jamstack
       </h3>
-      <h4 className="text-4xl text-brand-yellow font-funky text-center sm:pb-16 pb-10">
+      <h4 className="sm:text-4xl text-3xl text-brand-yellow font-funky text-center sm:pb-16 pb-10">
         It's Great!
       </h4>
       <form
