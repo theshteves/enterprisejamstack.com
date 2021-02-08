@@ -3,9 +3,12 @@ import * as React from 'react'
 const SubscribeForm = () => {
   return (
     <div className="py-16 px-5 relative ">
-      <h3 className="lg:text-5xl text-4xl font-bold sm:pb-16 pb-10 text-center">
+      <h3 className="lg:text-5xl text-4xl font-bold text-center pb-2">
         Get Really Good at Jamstack
       </h3>
+      <h4 className="text-4xl text-brand-yellow font-funky text-center sm:pb-16 pb-10">
+        It's Great!
+      </h4>
       <form
         className="mx-auto max-w-md grid grid-cols-1 gap-8 w-full bg-gray-1000 p-5"
         action={`https://app.convertkit.com/forms/${process.env.NEXT_PUBLIC_CONVERTKIT_SIGNUP_FORM}/subscriptions`}

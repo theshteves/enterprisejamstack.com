@@ -5,7 +5,7 @@ const Bio = () => {
   return (
     <section className="max-w-screen-lg md:rounded-xl mx-auto md:bg-gray-900 flex items-center md:pt-8 md:flex-row flex-col">
       <div className="flex-shrink-0 flex md:self-end">
-        <Image
+        <img
           src="https://res.cloudinary.com/dg3gyk0gu/image/upload/v1612812906/jamstackwithjason.com/jason_2x.png"
           width={500 / 1.3}
           height={500 / 1.3}
