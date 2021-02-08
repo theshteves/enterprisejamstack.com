@@ -1,0 +1,20 @@
+# Thanks so much for signing up! There's one last step.
+
+Please check your inbox for an email that just got sent. You'll need to click the confirmation link to receive any further emails.
+
+If you don't see the email after a few minutes, you might check your spam folder or other filters and add **hey@jamstackwithjason.com** to your contacts.
+
+Thanks,<br />
+Jason
+
+import Layout from 'layouts'
+import Background from 'components/hero/background'
+
+export default ({children}) => (
+  <Layout noFooter>
+    <div className="min-h-screen w-full flex items-center justify-center relative py-40 px-5">
+      <div className="max-w-md relative z-10 prose">{children}</div>
+      <Background />
+    </div>
+  </Layout>
+)

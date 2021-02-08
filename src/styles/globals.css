@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-display: optional;
+  @apply bg-gray-1000 text-white;
+}
+
+@font-face {
+  font-family: 'Challenge';
+  src: url('fonts/c1ac702b-69fb-4710-9cb9-88ef3a3eba61.woff2') format('woff2'),
+    url('fonts/1ce116c5-ecf6-413d-986d-82002777f763.woff') format('woff');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Challenge';
+  src: url('fonts/85da72db-7bb0-42ac-9115-a3dc90a52661.woff2') format('woff2'),
+    url('fonts/559c50d0-a8b1-4a3a-80b2-2d5ea1343e99.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Greycliff';
+  src: url('fonts/693a7971-591e-440d-bca9-9f09bce8f5c1.woff2') format('woff2'),
+    url('fonts/3056b105-81b2-4d3f-acbe-f2878977c67e.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Greycliff';
+  src: url('fonts/0e3d9586-a0fa-479f-aaac-bba06390a42c.woff2') format('woff2'),
+    url('fonts/2e88ba9b-de01-4f48-9d3e-fad39aa43f8a.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Greycliff';
+  src: url('fonts/9249f728-0118-4d2d-a4ca-179760ae709d.woff2') format('woff2'),
+    url('fonts/5997bece-ccff-438a-8bea-aee21f915ee1.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Greycliff';
+  src: url('fonts/0f76dbcf-bad3-42b7-9619-3458cdba490c.woff2') format('woff2'),
+    url('fonts/680f8582-c072-413d-a2ef-3f1f40013b1c.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Greycliff';
+  src: url('fonts/5b114e98-e83f-4bb2-b36b-349ff90b679c.woff2') format('woff2'),
+    url('fonts/112582af-e72b-4d8d-84b9-621a1baea5ed.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Greycliff';
+  src: url('fonts/b17c688f-34d7-4a50-b068-488ee67b867e.woff2') format('woff2'),
+    url('fonts/556fabc6-528c-4d5e-a4e0-a7bfbb5aed7c.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Greycliff';
+  src: url('fonts/e179c7f6-4fbd-440f-8470-6fe352df98e9.woff2') format('woff2'),
+    url('fonts/674ddc5e-9e69-416d-9366-41ebf633125c.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}

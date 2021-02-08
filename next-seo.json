@@ -1,7 +1,7 @@
 {
-  "title": "Fast, efficient, easy to work on websites built on the Jamstack",
+  "title": "Get Really Good at Jamstack",
   "titleTemplate": "%s | Jamstack with Jason",
-  "description": "This is my Next.js TypeScript Tailwind Site",
+  "description": "Fast, effective teams are using modern Jamstack to build websites. Learn how they do it in this new course by Jason Lengstorf.",
   "favicon": "/favicon.ico",
   "additionalMetaTags": [
     {"property": "author", "content": "jason lengstorf"},
@@ -11,21 +11,21 @@
     }
   ],
   "twitter": {
-    "cardType": "summary",
+    "cardType": "summary_large_image",
     "handle": "jlengstorf",
     "site": "jlengstorf"
   },
   "openGraph": {
     "type": "website",
-    "site_name": "Jason's Site",
+    "site_name": "Jamstack with Jason",
     "profile": {
       "firstName": "Jason"
     },
     "images": [
       {
-        "url": "/images/og.jpg",
+        "url": "https://res.cloudinary.com/dg3gyk0gu/image/upload/v1612788686/jamstackwithjason.com/card_2x.png",
         "width": 1280,
-        "height": 720
+        "height": 628
       }
     ]
   }

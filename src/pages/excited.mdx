@@ -1,0 +1,18 @@
+# Check Your Inbox!
+
+It's great that you want to get started. I'm excited to share Jamstack with Jason course with you.
+
+Thanks,<br />
+Jason
+
+import Layout from 'layouts'
+import Background from 'components/hero/background'
+
+export default ({children}) => (
+  <Layout noFooter>
+    <div className="min-h-screen w-full flex items-center justify-center relative py-40 px-5">
+      <div className="max-w-md relative z-10 prose">{children}</div>
+      <Background />
+    </div>
+  </Layout>
+)
