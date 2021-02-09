@@ -62,13 +62,15 @@ const Hero: React.FC = () => {
                 className={`${box.className} relative overflow-hidden transform`}
                 animate={{width: ['0%', '100%']}}
                 style={{width: '0%'}}
+                initial={{width: '0%'}}
                 transition={box.transition}
               >
                 <motion.div
                   animate={{x: [-80, 0], opacity: [0, 0.8]}}
                   transition={{
                     type: 'spring',
-                    duration: box.transition.duration,
+                    duration: box.transition.duration + 0.5,
+                    delay: 0.5 * i,
                   }}
                   className="absolute z-10 p-3 font-semibold"
                 >
@@ -76,11 +78,11 @@ const Hero: React.FC = () => {
                 </motion.div>
                 <motion.div
                   animate={{
-                    y: [150, 0],
+                    y: [300, 0],
                   }}
                   transition={{
-                    duration: box.transition.duration,
-                    delay: 0.5 * i,
+                    duration: box.transition.duration + 0.5,
+                    delay: 0.4 * i,
                   }}
                 >
                   {box.letter()}
@@ -103,6 +105,7 @@ const Hero: React.FC = () => {
               className={`${size2} ${inset2} origin-bottom self-end place-self-end bg-gray-900 `}
               animate={{opacity: [0, 1], scaleY: [0, 1]}}
               style={{opacity: 0, scaleY: 0}}
+              initial={{opacity: 0, scaleY: 0}}
               transition={{
                 duration: 1,
                 type: 'spring',
@@ -113,6 +116,7 @@ const Hero: React.FC = () => {
               className={`${size2} ${inset2} origin-top col-start-3 row-start-3 bg-gray-900 `}
               animate={{opacity: [0, 1], scaleY: [0, 1]}}
               style={{opacity: 0, scaleY: 0}}
+              initial={{opacity: 0, scaleY: 0}}
               transition={{
                 duration: 1.2,
                 type: 'spring',
