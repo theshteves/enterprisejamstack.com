@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import LetterJ from '../../assets/tiles/letter-j.svg'
 import LetterA from '../../assets/tiles/letter-a.svg'
 import LetterM from '../../assets/tiles/letter-m.svg'
-import Background from 'components/hero/background'
+// import Background from 'components/hero/background'
 
 const Hero: React.FC = () => {
   const size = 'lg:w-58 lg:h-58 sm:w-56 sm:h-56 w-40 h-40'
@@ -96,11 +96,11 @@ const Hero: React.FC = () => {
   return (
     <section className="w-full flex md:flex-row flex-col items-center justify-center min-h-screen md:space-x-10">
       <div className="md:pt-0 pt-24 flex items-center justify-center">
-        <Background />
+        {/* <Background /> */}
         <div className="relative flex items-center justify-center h-full">
           <div className="grid grid-cols-3 grid-rows-3 p-16">
             <motion.div
-              className={`${size2} ${inset2} origin-bottom self-end place-self-end bg-gray-1000 `}
+              className={`${size2} ${inset2} origin-bottom self-end place-self-end bg-gray-900 `}
               animate={{opacity: [0, 1], scaleY: [0, 1]}}
               style={{opacity: 0, scaleY: 0}}
               transition={{
@@ -110,7 +110,7 @@ const Hero: React.FC = () => {
               }}
             />
             <motion.div
-              className={`${size2} ${inset2} origin-top col-start-3 row-start-3 bg-gray-1000 `}
+              className={`${size2} ${inset2} origin-top col-start-3 row-start-3 bg-gray-900 `}
               animate={{opacity: [0, 1], scaleY: [0, 1]}}
               style={{opacity: 0, scaleY: 0}}
               transition={{

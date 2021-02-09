@@ -18,9 +18,10 @@ const Background = () => {
   return isRunning ? (
     <div className="overflow-hidden absolute top-0 left-0 w-full h-full">
       <motion.div
-        className="grid grid-cols-12 grid-rows-6 absolute top-0 left-0 h-screen overflow-hidden w-full"
+        className="grid grid-cols-12 grid-rows-6 absolute top-0 left-0 h-screen overflow-hidden w-full "
+        // causes flickering in chrome
+        // style={{skewX: -30}}
         // fade out
-        style={{skewX: -30}}
         animate={{opacity: [1, 1, 0]}}
         transition={{duration: 8}}
       >
@@ -41,13 +42,14 @@ const Background = () => {
                 delay: 0.1 * i,
               }}
               style={{
+                skewX: -30,
                 scaleX: 0,
                 zIndex: -i,
               }}
               className={`
                ${colStart} ${colSpan} ${rowStart} ${rowSpan} ${transformOrigin}
-              from-gray-1000 bg-gradient-to-t to-gray-900 relative 
-              `}
+                from-gray-1000 bg-gradient-to-t to-gray-900 relative overflow-hidden
+               `}
             />
           )
         })}
