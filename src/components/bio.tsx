@@ -12,16 +12,15 @@ const Bio = () => {
         alt="Jason dropping Jamstack knowledge"
       />
       <div className="p-8 md:pb-14 rounded-xl prose md:prose-lg bg-gray-900 sm:mx-0 mx-5">
-        <h2>Lorem Ipsum Dolor</h2>
+        <h2>I’m Jason Lengstorf.</h2>
         <p>
-          Faucibus ultrices quis quisque at inceptos mauris sit, aptent pharetra
-          auctor lacinia torquent felis potenti vel, convallis dignissim
-          himenaeos hac platea nunc.
-        </p>
-        <p>
-          Natoque dui porttitor non placerat volutpat mollis pulvinar hendrerit
-          felis, varius tempus mauris iaculis dignissim leo lectus arcu sapien,
-          ultricies nisi inceptos lacinia quisque tortor sit blandit.
+          Jason Lengstorf is a principal developer experience engineer at
+          Netlify and the host of Learn With Jason, a live-streamed video show
+          where he pairs with people in the community to learn something new in
+          90 minutes. He’s passionate about building healthy, efficient teams
+          and systems, and he’s done his best to positively influence the
+          community, leadership, and technical health of open source and
+          companies including Gatsby and IBM. He lives in Portland, Oregon.
         </p>
       </div>
     </section>

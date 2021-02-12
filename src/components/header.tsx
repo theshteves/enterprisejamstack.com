@@ -13,9 +13,9 @@ export const Logo = () => {
   return (
     <Link href={'/'}>
       <a className="text-center group">
-        <h1 className="text-4xl font-bold leading-none">Jamstack</h1>
+        <h1 className="text-4xl font-bold leading-none">Enterprise Jamstack</h1>
         <h2 className="text-brand-yellow group-hover:text-brand-yellow font-funky text-2xl font-bold leading-none -mt-px transition-all ease-in-out duration-150">
-          with Jason
+          with Jason Lengstorf
         </h2>
       </a>
     </Link>

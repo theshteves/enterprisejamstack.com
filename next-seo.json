@@ -1,6 +1,6 @@
 {
   "title": "Get Really Good at Jamstack",
-  "titleTemplate": "%s | Jamstack with Jason",
+  "titleTemplate": "%s | Enterprise Jamstack",
   "description": "Fast, effective teams are using modern Jamstack to build websites. Learn how they do it in this new course by Jason Lengstorf.",
   "favicon": "/favicon.ico",
   "additionalMetaTags": [
@@ -17,7 +17,7 @@
   },
   "openGraph": {
     "type": "website",
-    "site_name": "Jamstack with Jason",
+    "site_name": "Enterprise Jamstack",
     "profile": {
       "firstName": "Jason"
     },
