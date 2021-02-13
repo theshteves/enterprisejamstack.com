@@ -3,41 +3,8 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    layers: ['components', 'utilities'],
-    enabled: true,
+    enabled: false,
     content: ['./src/**/*.tsx', './src/**/*.mdx'],
-    options: {
-      // bleh
-      safelist: [
-        'col-start-1',
-        'col-start-2',
-        'col-start-3',
-        'col-start-4',
-        'col-start-5',
-        'col-start-6',
-        'col-start-7',
-        'col-start-8',
-        'col-start-9',
-        'col-start-10',
-        'col-start-11',
-        'col-start-12',
-        'col-span-1',
-        'col-span-2',
-        'col-span-3',
-        'col-span-4',
-        'row-start-1',
-        'row-start-2',
-        'row-start-3',
-        'row-start-4',
-        'row-start-5',
-        'row-start-6',
-        'row-span-1',
-        'row-span-2',
-        'row-span-3',
-        'origin-left',
-        'origin-right',
-      ],
-    },
   },
   theme: {
     colors: {
@@ -57,18 +24,28 @@ module.exports = {
         900: '#191919',
         1000: '#131313',
       },
+      transparent: 'rgba(255, 255, 255, 0)', // safari fix
     },
     extend: {
       fontFamily: {
         sans: ['Greycliff', ...defaultTheme.fontFamily.sans],
-        funky: ['Challenge', ...defaultTheme.fontFamily.sans],
+        funky: ['Ahkio', ...defaultTheme.fontFamily.sans],
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.100'),
+            color: theme('colors.gray.50'),
             'h1, h2, h3, h4, h5': {
               color: theme('colors.white'),
+            },
+            code: {
+              color: theme('colors.white'),
+              background: theme('colors.gray.800'),
+              padding: '3px 5px',
+              borderRadius: 5,
+            },
+            'code::before, code::after': {
+              content: "''",
             },
             a: {
               color: theme('colors.brand.yellow'),

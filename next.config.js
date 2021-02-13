@@ -1,7 +1,15 @@
 const withSvgr = require(`next-svgr`)
 const withPlugins = require('next-compose-plugins')
-const withMDX = require('@next/mdx')()
 const withImages = require(`next-images`)
+const withMDX = require(`@next/mdx`)({
+  options: {
+    remarkPlugins: [
+      require('remark-slug'),
+      require('remark-footnotes'),
+      require('remark-code-titles'),
+    ],
+  },
+})
 
 const IMAGE_HOST_DOMAINS = ['res.cloudinary.com']
 
@@ -22,12 +30,6 @@ module.exports = withPlugins(
     withImages(),
     withMDX({
       pageExtensions: ['ts', 'tsx', 'mdx'],
-      remarkPlugins: [
-        require('remark-slug'),
-        require('remark-footnotes'),
-        require('remark-code-titles'),
-      ],
-      rehypePlugins: [require('mdx-prism')],
     }),
   ],
   nextConfig,

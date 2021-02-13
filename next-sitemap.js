@@ -6,5 +6,11 @@ module.exports = {
   priority: 0.7,
   sitemapSize: 5000,
   generateRobotsTxt: true,
-  exclude: [],
+  exclude: [
+    '/confirm',
+    '/confirmed',
+    '/excited',
+    '/unsubscribed',
+    '/placeholder-article',
+  ],
 }

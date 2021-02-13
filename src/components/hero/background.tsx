@@ -17,16 +17,9 @@ const Background = () => {
 
   return isRunning ? (
     <div className="overflow-hidden absolute top-0 left-0 w-full h-full">
-      <motion.div
-        className="grid grid-cols-12 grid-rows-6 absolute top-0 left-0 h-screen overflow-hidden w-full "
-        // causes flickering in chrome
-        // style={{skewX: -30}}
-        // fade out
-        animate={{opacity: [1, 1, 0]}}
-        transition={{duration: 8}}
-      >
+      <motion.div className="grid grid-cols-8 grid-rows-6 absolute top-0 left-0 h-screen overflow-hidden w-full ">
         {new Array(8).fill({}).map((_, i) => {
-          const colStart = `col-start-${Math.floor(random(1, 12))}`
+          const colStart = `col-start-${Math.floor(random(1, 8))}`
           const colSpan = `col-span-${Math.floor(random(1, 4))}`
           const rowStart = `row-start-${Math.floor(random(1, 6))}`
           const rowSpan = `row-span-${Math.floor(random(1, 3))}`
@@ -35,15 +28,16 @@ const Background = () => {
           return (
             <motion.div
               key={`${colStart}-${colSpan}-${i}-${count}-${transformOrigin}`}
-              animate={{scaleX: [0, 1]}}
-              transition={{
-                type: 'ease-in-out',
-                duration: random(2, 8),
-                delay: 0.1 * i,
-              }}
+              // animate={{scaleX: [0, 1]}}
+              // transition={{
+              //   type: 'ease-in-out',
+              //   duration: random(3, 8),
+              //   delay: 0.1 * i,
+              // }}
               style={{
-                skewX: -30,
-                scaleX: 0,
+                opacity: 0.6,
+                skewX: -16,
+                // scaleX: 0,
                 zIndex: -i,
               }}
               className={`

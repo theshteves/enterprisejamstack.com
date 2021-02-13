@@ -1,18 +1,14 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-const Header: React.FC = () => {
-  return (
-    <header className="z-10 px-5 py-8 flex items-center justify-center w-full absolute left-0 top-0">
-      <Logo />
-    </header>
-  )
+type LogoProps = {
+  className?: string
 }
 
-export const Logo = () => {
+const Logo: React.FC<LogoProps> = ({className = 'text-center '}) => {
   return (
     <Link href={'/'}>
-      <a className="text-center group">
+      <a className={`${className} group`}>
         <h1 className="sm:text-4xl text-2xl font-bold leading-none">
           Enterprise Jamstack
         </h1>
@@ -24,4 +20,4 @@ export const Logo = () => {
   )
 }
 
-export default Header
+export default Logo

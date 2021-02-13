@@ -7,16 +7,26 @@ body {
   @apply bg-gray-1000 text-white;
 }
 
+.font-funky {
+  font-size: 110%;
+}
+
+h1 {
+  strong {
+    @apply font-funky text-brand-yellow;
+  }
+}
+
 @font-face {
-  font-family: 'Challenge';
-  src: url('fonts/c1ac702b-69fb-4710-9cb9-88ef3a3eba61.woff2') format('woff2'),
-    url('fonts/1ce116c5-ecf6-413d-986d-82002777f763.woff') format('woff');
+  font-family: 'Ahkio';
+  src: url('Fonts/7e6b13f8-95a2-4c2d-ada2-fae91d53e1c3.woff2') format('woff2'),
+    url('Fonts/09898f99-5240-4678-9dc2-770e5c74097b.woff') format('woff');
   font-weight: normal;
 }
 @font-face {
-  font-family: 'Challenge';
-  src: url('fonts/85da72db-7bb0-42ac-9115-a3dc90a52661.woff2') format('woff2'),
-    url('fonts/559c50d0-a8b1-4a3a-80b2-2d5ea1343e99.woff') format('woff');
+  font-family: 'Ahkio';
+  src: url('Fonts/6b42cb10-eb03-4d96-81f0-c2e7b54c3c5b.woff2') format('woff2'),
+    url('Fonts/af03c36b-9595-4dd3-9fec-af6b6bd149d1.woff') format('woff');
   font-weight: bold;
 }
 @font-face {

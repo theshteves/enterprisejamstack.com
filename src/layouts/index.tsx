@@ -5,11 +5,13 @@ import Footer from 'components/footer'
 
 type LayoutProps = {
   meta?: any
+  header?: React.ReactElement
   noFooter?: boolean
 }
 
 const DefaultLayout: FunctionComponent<LayoutProps> = ({
   children,
+  header = <Header />,
   meta,
   noFooter = false,
 }) => {
@@ -29,7 +31,7 @@ const DefaultLayout: FunctionComponent<LayoutProps> = ({
         }}
         canonical={url}
       />
-      <Header />
+      {header}
       {children}
       {!noFooter && <Footer />}
     </>
