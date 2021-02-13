@@ -19,14 +19,14 @@ h1 {
 
 @font-face {
   font-family: 'Ahkio';
-  src: url('Fonts/7e6b13f8-95a2-4c2d-ada2-fae91d53e1c3.woff2') format('woff2'),
-    url('Fonts/09898f99-5240-4678-9dc2-770e5c74097b.woff') format('woff');
+  src: url('fonts/7e6b13f8-95a2-4c2d-ada2-fae91d53e1c3.woff2') format('woff2'),
+    url('fonts/09898f99-5240-4678-9dc2-770e5c74097b.woff') format('woff');
   font-weight: normal;
 }
 @font-face {
   font-family: 'Ahkio';
-  src: url('Fonts/6b42cb10-eb03-4d96-81f0-c2e7b54c3c5b.woff2') format('woff2'),
-    url('Fonts/af03c36b-9595-4dd3-9fec-af6b6bd149d1.woff') format('woff');
+  src: url('fonts/6b42cb10-eb03-4d96-81f0-c2e7b54c3c5b.woff2') format('woff2'),
+    url('fonts/af03c36b-9595-4dd3-9fec-af6b6bd149d1.woff') format('woff');
   font-weight: bold;
 }
 @font-face {
