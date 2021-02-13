@@ -7,10 +7,6 @@ body {
   @apply bg-gray-1000 text-white;
 }
 
-.font-funky {
-  font-size: 110%;
-}
-
 h1 {
   strong {
     @apply font-funky text-brand-yellow;

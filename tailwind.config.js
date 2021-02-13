@@ -10,7 +10,13 @@ module.exports = {
     colors: {
       ...defaultTheme.colors,
       ...colors,
-      brand: {red: '#F83E0D', purple: '#8B3BDB', yellow: '#FCAC14'},
+      brand: {
+        red: '#FF6E48',
+        redDark: '#F83E0D',
+        purple: '#A750FD',
+        purpleDark: '#8B3BDB',
+        yellow: '#FCAC14', // #FFCE72
+      },
       gray: {
         50: '#e4e4e4',
         100: '#cbcbcb',

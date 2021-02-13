@@ -12,7 +12,7 @@ const Logo: React.FC<LogoProps> = ({className = 'text-center '}) => {
         <h1 className="sm:text-4xl text-2xl font-bold leading-none">
           Enterprise Jamstack
         </h1>
-        <h2 className="text-brand-yellow group-hover:text-brand-yellow font-funky sm:text-2xl text-xl font-bold leading-none sm:-mt-px mt-1 transition-all ease-in-out duration-150">
+        <h2 className="text-brand-yellow group-hover:text-brand-yellow font-funky sm:text-2xl text-xl leading-none sm:-mt-px mt-1 transition-all ease-in-out duration-150">
           with Jason Lengstorf
         </h2>
       </a>

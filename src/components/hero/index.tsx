@@ -14,31 +14,31 @@ const Hero: React.FC = () => {
     {
       letter: (props: any) => <LetterJ className={`${size}`} {...props} />,
       label: 'JavaScript',
-      className: 'bg-brand-yellow',
+      color: '#FCAC14',
       transition: {
         type: 'spring',
         delay: 0.1,
-        duration: 1,
+        duration: 0.8,
       },
     },
     {
       letter: (props: any) => <LetterA className={`${size}`} {...props} />,
       label: 'APIs',
-      className: 'bg-brand-red',
+      color: '#F83E0D',
       transition: {
         type: 'spring',
         delay: 0.3,
-        duration: 1,
+        duration: 0.8,
       },
     },
     {
       letter: (props?: any) => <LetterM className={`${size}`} {...props} />,
       label: 'Markup',
-      className: 'bg-brand-purple',
+      color: '#8B3BDB',
       transition: {
         type: 'spring',
-        delay: 0.6,
-        duration: 1,
+        delay: 0.4,
+        duration: 0.8,
       },
     },
   ]
@@ -59,9 +59,9 @@ const Hero: React.FC = () => {
         `}
             >
               <motion.div
-                className={`${box.className} relative overflow-hidden transform`}
+                className="relative overflow-hidden transform"
                 animate={{width: ['0%', '100%']}}
-                style={{width: '0%'}}
+                style={{width: '0%', background: box.color}}
                 initial={{width: '0%'}}
                 transition={box.transition}
               >
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
                   transition={{
                     type: 'spring',
                     duration: box.transition.duration + 0.5,
-                    delay: 0.5 * i,
+                    delay: 0.3 * i,
                   }}
                   className="absolute z-10 p-3 font-semibold"
                 >
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
                   }}
                   transition={{
                     duration: box.transition.duration + 0.5,
-                    delay: 0.4 * i,
+                    delay: 0.2 * i,
                   }}
                 >
                   {box.letter()}
@@ -127,14 +127,14 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="p-8 md:flex-grow-0 flex-grow relative z-10">
+      <div className="p-8 md:flex-grow-0 flex-grow relative z-10 sm:text-left text-center">
         <motion.h1
           animate={{
             opacity: [0, 1],
             y: [-30, 0],
           }}
           style={{opacity: 0}}
-          transition={{type: 'spring'}}
+          transition={{type: 'spring', duration: 1}}
           className="lg:text-6xl md:text-5xl text-4xl font-semibold max-w-2xl"
         >
           Fast Effective Teams using Modern Jamstack
@@ -144,9 +144,9 @@ const Hero: React.FC = () => {
             opacity: [0, 1],
             y: [-20, 0],
           }}
-          transition={{type: 'spring', delay: 0.1}}
+          transition={{type: 'spring', delay: 0.1, duration: 1}}
           style={{opacity: 0}}
-          className="text-xl pt-2 text-gray-width text-brand-yellow"
+          className="text-3xl pt-2 text-gray-width text-brand-red font-funky"
         >
           Learn how in this new course by Jason Lengstorf
         </motion.h2>

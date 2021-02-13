@@ -3,11 +3,14 @@ import * as React from 'react'
 const SubscribeForm = () => {
   return (
     <div className="py-16 px-5 relative">
-      <h3 className="lg:text-5xl text-2xl font-bold text-center pb-4 max-w-screen-lg mx-auto">
-        Unlock the <strong className="text-brand-yellow">Full Potential</strong>{' '}
-        of Scalable & Production Ready Jamstack Architecure for Your Team
+      <h3 className="lg:text-5xl text-4xl font-bold text-center pb-4 max-w-screen-lg mx-auto">
+        Unlock the Full Potential of{' '}
+        <strong className="sm:block text-brand-yellow font-funky transform sm:scale-105">
+          Scalable & Production Ready
+        </strong>{' '}
+        Jamstack Architecure for Your Team
       </h3>
-      <h4 className="sm:text-xl text-lg text-brand-yellow text-center sm:pb-16 pb-10 leading-tight sm:w-auto w-56 mx-auto">
+      <h4 className="sm:text-xl text-lg text-gray-200 text-center sm:pb-16 pb-10 leading-tight sm:w-auto w-56 mx-auto">
         Be the first to hear about updates to this course
       </h4>
       <form
@@ -40,7 +43,7 @@ const SubscribeForm = () => {
         </div>
         <button
           type="submit"
-          className="group flex items-center justify-center font-bold text-center py-4 text-lg px-4 bg-gradient-to-r from-brand-purple to-brand-red text-white"
+          className="group flex items-center justify-center font-bold text-center py-4 text-lg px-4 bg-gradient-to-r from-brand-purpleDark to-brand-redDark text-white"
         >
           <span className="group-hover:scale-105 transition-transform ease-in-out duration-300 transform">
             Get Good at Jamstack
