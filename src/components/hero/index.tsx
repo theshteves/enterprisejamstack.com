@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="w-full flex md:flex-row flex-col items-center justify-center min-h-screen md:space-x-10">
-      <div className="md:pt-0 pt-24 sm:pl-24 flex items-center justify-center">
+      <div className="md:pt-24 pt-32 sm:pl-24 flex items-center justify-center">
         {/* <Background /> */}
         <div className="relative flex items-center justify-center h-full">
           <div className="grid grid-cols-3 grid-rows-3 p-16">
