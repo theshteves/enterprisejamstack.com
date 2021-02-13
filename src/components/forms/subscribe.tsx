@@ -4,8 +4,8 @@ const SubscribeForm = () => {
   return (
     <div className="py-16 px-5 relative">
       <h3 className="lg:text-5xl text-2xl font-bold text-center pb-4 max-w-screen-lg mx-auto">
-        Unlock the <span className="text-brand-yellow">Full Potential</span> of
-        Scalable & Production Ready Jamstack Architecure for Your Team
+        Unlock the <strong className="text-brand-yellow">Full Potential</strong>{' '}
+        of Scalable & Production Ready Jamstack Architecure for Your Team
       </h3>
       <h4 className="sm:text-xl text-lg text-brand-yellow text-center sm:pb-16 pb-10 leading-tight sm:w-auto w-56 mx-auto">
         Be the first to hear about updates to this course
