@@ -36,7 +36,6 @@ const ArticleLayout = ({meta, children}: any) => {
               src={coverImageUrl}
               width={1280}
               height={720 / 1.5}
-              layout="responsive"
               quality={100}
               alt={coverImageAlt || ''}
             />
