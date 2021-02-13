@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: true,
     content: ['./src/**/*.tsx', './src/**/*.mdx'],
   },
   theme: {
@@ -24,7 +24,6 @@ module.exports = {
         900: '#191919',
         1000: '#131313',
       },
-      transparent: 'rgba(255, 255, 255, 0)', // safari fix
     },
     extend: {
       fontFamily: {
