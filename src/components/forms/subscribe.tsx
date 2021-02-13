@@ -4,10 +4,10 @@ const SubscribeForm = () => {
   return (
     <div className="py-16 px-5 relative ">
       <h3 className="lg:text-5xl text-4xl font-bold text-center pb-2">
-        Get Really Good at Jamstack
+        Unlock the full potential of scalable & production ready Jamstack Architecure for Your Team
       </h3>
       <h4 className="sm:text-4xl text-3xl text-brand-yellow font-funky text-center sm:pb-16 pb-10">
-        It's Great!
+        be the first to hear about updates to this course
       </h4>
       <form
         className="mx-auto max-w-md grid grid-cols-1 gap-8 w-full bg-gray-1000 p-5"
@@ -42,7 +42,7 @@ const SubscribeForm = () => {
           className="group flex items-center justify-center font-bold text-center py-4 text-lg px-4 bg-gradient-to-r from-brand-purple to-brand-red text-white"
         >
           <span className="group-hover:scale-105 transition-transform ease-in-out duration-300 transform">
-            Learn Jamstack
+            Get Good at Jamstack
           </span>
         </button>
       </form>
