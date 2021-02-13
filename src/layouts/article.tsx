@@ -32,11 +32,11 @@ const ArticleLayout = ({meta, children}: any) => {
         </h1>
         {coverImageUrl && (
           <header>
-            <Image
-              src={coverImageUrl}
+            <img
+              src={coverImageUrl[1]}
               width={1280}
+              srcSet={`${coverImageUrl[0]} 1x, ${coverImageUrl[1]} 2x`}
               height={720 / 1.5}
-              quality={100}
               alt={coverImageAlt || ''}
             />
           </header>

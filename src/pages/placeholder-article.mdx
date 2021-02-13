@@ -29,8 +29,10 @@ export default ({children, ...meta}) => (
       title: `This is a **placeholder article** to demonstrate things`,
       description: 'Lorem ipsum dolor sit amet.',
       image: {
-        url:
+        url: [
+          'https://res.cloudinary.com/dg3gyk0gu/image/upload/w_640,h_240/jamstackwithjason.com/placeholder_2x.png',
           'https://res.cloudinary.com/dg3gyk0gu/image/upload/v1613253731/jamstackwithjason.com/placeholder_2x.png',
+        ],
         alt: 'three boxes',
       },
       ogImage: {
