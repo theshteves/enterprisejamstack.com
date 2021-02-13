@@ -7,7 +7,8 @@ import removeMarkdown from 'remove-markdown'
 
 const ArticleLayout = ({meta, children}: any) => {
   const {
-    image: {url: imageUrl, alt: imageAlt},
+    image: {url: coverImageUrl, alt: coverImageAlt},
+    ogImage,
     title,
     description,
   } = meta || {}
@@ -18,30 +19,31 @@ const ArticleLayout = ({meta, children}: any) => {
       meta={{
         title: removeMarkdown(title),
         description: removeMarkdown(description),
-        images: [{url: imageUrl, alt: imageAlt}],
+        ogImage,
       }}
     >
-      <article className="max-w-screen-lg mx-auto space-y-8 py-40">
-        <h1 className="pt-16 max-w-screen-lg mx-auto sm:text-7xl text-2xl font-bold text-center">
+      <article className="max-w-screen-lg mx-auto space-y-8 sm:py-40 py-24">
+        <h1 className="sm:pt-16 pt-14 max-w-screen-lg mx-auto lg:text-7xl sm:text-6xl text-4xl font-bold text-center lg:px-5 px-0">
           <Markdown
-            className=""
             source={title}
             disallowedTypes={['paragraph']}
             unwrapDisallowed
           />
         </h1>
-        {imageUrl && (
+        {coverImageUrl && (
           <header>
             <Image
-              src={imageUrl}
+              src={coverImageUrl}
               width={1280}
               height={720 / 1.5}
-              alt={imageAlt || ''}
+              layout="responsive"
+              quality={100}
+              alt={coverImageAlt || ''}
             />
           </header>
         )}
 
-        <main className="prose lg:prose-xl sm:prose-lg max-w-screen-md mx-auto">
+        <main className="prose lg:prose-xl sm:prose-lg max-w-screen-md mx-auto px-5">
           {children}
         </main>
         {/* TODO: add share section */}

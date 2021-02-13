@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center space-y-2 transform scale-90">
         <Link href="/">
           <a>
-            <Boxes />
+            <Boxes className="sm:w-auto w-8" />
           </a>
         </Link>
       </div>

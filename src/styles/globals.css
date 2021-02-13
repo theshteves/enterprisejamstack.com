@@ -7,12 +7,21 @@ body {
   @apply bg-gray-1000 text-white;
 }
 
-h1 {
+h1,
+h2 {
   strong {
-    @apply font-funky text-brand-yellow;
+    @apply font-funky text-brand-yellow transform scale-105 !important;
   }
 }
 
+* > blockquote,
+blockquote,
+blockquote > h1,
+blockquote > h2 {
+  @apply font-funky text-brand-yellow !important;
+}
+
+,
 @font-face {
   font-family: 'Ahkio';
   src: url('fonts/7e6b13f8-95a2-4c2d-ada2-fae91d53e1c3.woff2') format('woff2'),
