@@ -55,7 +55,7 @@ module.exports = {
             a: {
               color: theme('colors.brand.yellow'),
               '&:hover': {
-                color: theme('colors.brand.purple'),
+                color: theme('colors.brand.red'),
               },
             },
           },
