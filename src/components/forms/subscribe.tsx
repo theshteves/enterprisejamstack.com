@@ -4,7 +4,7 @@ import * as React from 'react'
 const SubscribeForm = () => {
   const router = useRouter()
 
-  async function handleSubmit(event) {
+  async function handleSubmit(event: any) {
     event.preventDefault()
 
     const data = new FormData(event.target)
