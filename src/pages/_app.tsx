@@ -1,5 +1,6 @@
 import React from 'react'
 import {AppProps} from 'next/app'
+import {ConvertKitProvider} from '../hooks/use-convertkit'
 import '../styles/globals.css'
 import {DefaultSeo} from 'next-seo'
 import SEO from '../../next-seo.json'
@@ -8,12 +9,12 @@ import mdxComponents from 'components/mdx'
 
 function MyApp({Component, pageProps}: AppProps) {
   return (
-    <>
+    <ConvertKitProvider>
       <DefaultSeo {...SEO} />
       <MDXProvider components={mdxComponents}>
         <Component {...pageProps} />
       </MDXProvider>
-    </>
+    </ConvertKitProvider>
   )
 }
 
